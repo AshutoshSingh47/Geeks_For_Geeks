@@ -21,8 +21,6 @@ public class Invert_Array {
         for(int e:a)
         	System.out.print(e+" ");
      
-//        for(int e:b)
-//        System.out.print(e+" ");
 	}
 }
 
