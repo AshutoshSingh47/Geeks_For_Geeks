@@ -1,3 +1,7 @@
+//This Problem Rotate Array is based on rotation of some elements as per given index by user.
+//for eg. 1 2 4 5 6 7
+// we have to rotate first two elements and put at last
+// new array = 4 5 6 7 1 2.
 package arrays;
 import java.util.Scanner;
 public class Rotate_Array {
@@ -5,7 +9,7 @@ public class Rotate_Array {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		int i,j,n,size;
-		int a[]={7,2,2,2,0};
+		int a[]={3,5,1,2,9,8,6,7,4,0};
 		size=a.length;
 		System.out.println(size);
 		System.out.println("Enter the Limit");
