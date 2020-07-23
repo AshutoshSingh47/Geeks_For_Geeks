@@ -8,36 +8,36 @@ public class Rotate_Array {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		int i,j,n,size;
-		int a[]={3,5,1,2,9,8,6,7,4,0};
-		size=a.length;
-		System.out.println(size);
-		System.out.println("Enter the Limit");
+		int i,j,n,size,tc;
+		System.out.println("Enter the test cases");
+		tc=sc.nextInt();
+		while(tc!=0){
+			tc--;
+		size=sc.nextInt();
+		int a[]=new int[size];
 		n=sc.nextInt();
 		int b[]=new int[n];
+		for(i=0;i<size;i++)
+		{
+			a[i]=sc.nextInt();
+		}
 		for(i=0,j=0;i<n;i++,j++)
 		{
 			b[j]=a[i];
 		}
-		for(int e:b){
-			System.out.print(e+" ");}
-		System.out.println();
 		for(i=0,j=n;i<size-n;i++,j++)
 		{
 			a[i]=a[j];
 		}
-		for(int e:a)
-		{
-			System.out.print(e+" ");
-		}
-		System.out.println();
 		for(i=size-n,j=0;i<size;i++,j++)
 		{
 			a[i]=b[j];
 		}
+	
 for(int e:a)
 {
 	System.out.print(e+" ");
+}
 }
 	}
 
