@@ -4,20 +4,20 @@
 //That is : 6
 //If given user input 4 : That means 4th largest no in the array : That is 5.
 package arrays;
-
 import java.util.Scanner;
-
 public class Kth_element {
-
 	public static void main(String[] args) {
-		int i,j,size,temp;
+		int i,j,size,temp,tc,Kth;
 		Scanner sc=new Scanner(System.in);
-		System.out.println("enter size");
+		System.out.println("Enter Test Cases");
+		tc=sc.nextInt();
+		while(tc!=0){
+			tc--;
 		size=sc.nextInt();
 		int a[]=new int[size];
-		System.out.println("enter elements");
 		for(i=0;i<size;i++)
 		{a[i]=sc.nextInt();}
+		Kth=sc.nextInt();
 		for(i=0;i<size-1;i++)
 		{
 			for(j=0;j<size-i-1;j++)
@@ -30,10 +30,7 @@ public class Kth_element {
 				}
 			}
 		}
-		for(int e:a)
-		{
-			System.out.print(e+" ");
-		}
+			System.out.println(a[Kth-1]);}
 
 	}
 
