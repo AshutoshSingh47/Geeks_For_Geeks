@@ -30,7 +30,7 @@ System.out.println("Middle Element = "+m);
 	} 
 
 	// Driver method to test above 
-	public static void main(String args[]) 
+	public static void main(String[]args) 
 	{ int x;
 	Scanner sc=new Scanner(System.in);
 		Binary_Search ob = new Binary_Search(); 
